@@ -1,0 +1,81 @@
+@import "normalize.scss";
+
+// ------------------------------------------------ FONTS
+
+@font-face {
+    font-family: 'MuseoSlab500Regular';
+    src: url('../fonts/Museo_Slab_500-webfont.eot');
+    src: url('../fonts/Museo_Slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo_Slab_500-webfont.woff') format('woff'),
+         url('../fonts/Museo_Slab_500-webfont.ttf') format('truetype'),
+         url('../fonts/Museo_Slab_500-webfont.svg#MuseoSlab500Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// ------------------------------------------------ BRAND
+
+$neublack: #444;
+$darkbrand: #d84822;
+$lightbrand: #fb9900;
+
+$spaces: 1.25em;
+
+
+$titlefonts: 'MuseoSlab500Regular', Georgia, 'Times New Roman', Times, sans-serif;
+$basefonts: Helvetica, Arial, sans-serif;
+
+// ------------------------------------------------ BASE
+
+body {
+  background: url('../img/subtle_dots.png') repeat;
+  font: 1em/1.5 $titlefonts;
+  color: $neublack;
+  margin: $spaces;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $titlefonts;
+  text-align: center;
+}
+
+h1 {
+  line-height: 1em;
+}
+
+h3 {
+  border-bottom: 0.063em solid $neublack;
+  border-top: 0.063em solid $neublack;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+li {
+  padding-bottom: 0.313em;
+}
+
+a:link {
+  color: $darkbrand;
+}
+a:visited {
+  color: $lightbrand;
+}
+a:hover, a:active {
+  color: $neublack;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+  body {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  }
